@@ -62,7 +62,7 @@ class CommentForm extends React.Component {
 
 class CommentText extends React.Component {
   state = {
-    count: "0",
+    count: 0,
     showIcon: false
   };
   showIc = () => this.setState(({ showIcon }) => ({ showIcon: !showIcon }));
@@ -92,21 +92,14 @@ class CommentText extends React.Component {
                               style={{ cursor: "pointer" }}
                               onClick={() => completeFunc(cmmnt.id)}
                             >
-                              <button
-                                className="button"
-                                on
-                                click={this.increment}
-                              >
-                                &#9829;
-                              </button>
-                              <p>{count}Likes</p>
+                              &#9825;
                             </span>
                           ) : (
-                            <span
-                              style={{ cursor: "pointer" }}
-                              onClick={() => completeFunc(cmmnt.id)}
-                            >
-                              &#9825;
+                            <span style={{ cursor: "pointer" }}>
+                              <i className="but1" onClick={this.increment}>
+                                &#9829;
+                              </i>
+                              <p>{count}Likes</p>
                             </span>
                           )}
                         </div>
