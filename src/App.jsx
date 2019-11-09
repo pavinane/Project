@@ -5,8 +5,9 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import Tail from './Tail';
 import Head from './Head';
 import Toss from './Toss';
+import Comment from './Comment';
 
-const menu = ['home', 'toss'];
+const menu = ['home', 'toss', 'comment'];
 const Navigation = ({ menus }) => (
   <div className="navigation">
     <ul>
@@ -30,6 +31,7 @@ class App extends React.Component {
             <Route exact path="/toss" component={Toss} />
             <Route exact path="/tail" component={Tail} />
             <Route exact path="/head" component={Head} />
+            <Route exact path="/comment" component={Comment} />
           </Switch>
         </BrowserRouter>
       </div>

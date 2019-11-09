@@ -27,13 +27,3 @@ const CoinFlip = () => (Math.random() < 0.5 ? (
     </div>
   ));
 export default CoinFlip;
-// const CoinFlip = () =>
-//  Math.random() < 0.5 ? (
-//    <div>
-//      <img src=”/heads.svg” alt=”Heads” />
-//    </div>
-//  ) : (
-//    <div>
-//      <img src=”/tails.svg” alt=”Tails” />
-//    </div>
-//  );

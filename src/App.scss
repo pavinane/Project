@@ -3,12 +3,26 @@
   padding: 0;
 }
 .app {
-  background: blue;
-  height: 630px;
   margin: 0 auto;
   .navigation {
     font-size: 35px;
     text-transform: capitalize;
+
+    ul {
+      a {
+        float: left;
+        text-decoration: none;
+        li {
+          list-style-type: none;
+
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .list {
+    position: relative;
+    top: 200px;
   }
   .toss {
     // position: relative;
