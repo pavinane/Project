@@ -1,6 +1,7 @@
 import React from "react";
 import shortid from "shortid";
 import "./comment.scss";
+
 class CommentForm extends React.Component {
   state = {
     comment: "",
@@ -95,11 +96,11 @@ class CommentText extends React.Component {
                               &#9825;
                             </span>
                           ) : (
-                            <span style={{ cursor: "pointer" }}>
-                              <i className="but1" onClick={this.increment}>
-                                &#9829;
-                              </i>
-                              <p>{count}Likes</p>
+                            <span
+                              style={{ cursor: "pointer" }}
+                              onClick={this.increment}
+                            >
+                              &#9825; <p>{count}Likes</p>
                             </span>
                           )}
                         </div>

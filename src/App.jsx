@@ -19,7 +19,11 @@ const Navigation = ({ menus }) => (
     </ul>
   </div>
 );
-const Home = () => <h1>This is Home</h1>;
+const Home = () => (
+  <div className="h1">
+    <h1>This is Home</h1>
+  </div>
+);
 class App extends React.Component {
   render() {
     return (
