@@ -1,0 +1,17 @@
+.left-card {
+  position: fixed;
+  .cards {
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px 0;
+    grid-template-rows: 100px 1fr 1fr;
+    width: 350px;
+    height: 500px;
+    h2 {
+      background-color: pink;
+    }
+    h1 {
+      background-color: rgb(242, 192, 255);
+    }
+  }
+}

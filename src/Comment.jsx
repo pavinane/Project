@@ -118,22 +118,6 @@ class CommentText extends React.Component {
   }
 }
 
-// class Likes extends React.Component {
-//   count = 0;
-//   increment = () => this.setState(({ count }) => ({ count: count + 1 }));
-//   decrement = () => this.setState(({ count }) => ({ count: count - 1 }));
-//   render() {
-//     if (this.props.loggedIn) {
-//       return (
-//         <span>
-//        button
-//         </span>
-//       );
-//     } else {
-//       return <h2>Hey man! Log in to see this section</h2>;
-//     }
-//   }
-// }
 class CommentList extends React.Component {
   state = {
     cmmnts: []
