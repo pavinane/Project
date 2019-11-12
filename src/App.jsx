@@ -7,8 +7,9 @@ import Head from './Head';
 import Toss from './Toss';
 import Comment from './Comment';
 import Instagram from './Instagram/Instagram';
+import Profile from './Instagram/Profile';
 
-const menu = ['home', 'toss', 'comment', 'Instagram'];
+const menu = ['home', 'toss', 'comment', 'Instagram', 'profile'];
 const Navigation = ({ menus }) => (
   <div className="navigation">
     <ul>
@@ -38,6 +39,7 @@ class App extends React.Component {
             <Route exact path="/head" component={Head} />
             <Route exact path="/comment" component={Comment} />
             <Route exact path="/instagram" component={Instagram} />
+            <Route exact path="/profile" component={Profile} />
           </Switch>
         </BrowserRouter>
       </div>
