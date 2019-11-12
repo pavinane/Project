@@ -23,42 +23,81 @@ import img19 from './ImagesInsta/ins19.jpg';
 import img20 from './ImagesInsta/ins20.jpg';
 import img21 from './ImagesInsta/ins21.jpg';
 
-const Prof = () => (
-  <div className="prof">
-    <div className="sides">
-      <div className="prf-right">
-        <img src={img} alt="" />
-      </div>
-      <div className="prf-left">
-        <div className="id-name">
-          <div className="name-1">
-            <h1>nanepavi97</h1>
+class Prof extends React.Component {
+  render() {
+    return (
+      <div className="prof">
+        <div className="sides">
+          <div className="prf-right">
+            <img src={img} alt="" />
           </div>
-          <div className="e-p">
-            <button type="button">edit profile</button>
+          <div className="prf-left">
+            <div className="id-name">
+              <div className="name-1">
+                <h1>nanepavi97</h1>
+              </div>
+              <div className="e-p">
+                <button type="button">edit profile</button>
+              </div>
+              <i className="fas fa-cog" />
+            </div>
+            <div className="pff">
+              <div className="post">21 post</div>
+              <div className="followers">89 followers</div>
+              <div className="following">363 following</div>
+            </div>
+            <div className="slogan">
+              <h1>Páví Ñañ Ê 18/4/97</h1>
+              <p>
+                alwayz classy ,nevr trashy,N a little bit sassy
+                <br />
+                🎂Candle on April 18🍾
+                <br />
+                ⛓Mechanical Engineer 🔩
+                <br />
+                Thalapathy rasigan
+              </p>
+            </div>
           </div>
-          <i className="fas fa-cog" />
         </div>
-        <div className="pff">
-          <div className="post">21 post</div>
-          <div className="followers">89 followers</div>
-          <div className="following">363 following</div>
-        </div>
-        <div className="slogan">
-          <h1>Páví Ñañ Ê 18/4/97</h1>
-          <p>
-            alwayz classy ,nevr trashy,N a little bit sassy
-            <br />
-            🎂Candle on April 18🍾
-            <br />
-            ⛓Mechanical Engineer 🔩
-            <br />
-            Thalapathy rasigan
-          </p>
+        <div className="grids">
+          <Grid1 />
+          <Grid2 />
+          <Grid3 />
         </div>
       </div>
-    </div>
-    <div className="grids">
+    );
+  }
+}
+
+const Titl = ({ sc }) => (
+  <div className="grd-names">
+    {sc.map((crd) => (
+      <div className="sli-crd2">
+        <h3>
+          <i className={crd.i} />
+          {crd.h3}
+        </h3>
+      </div>
+    ))}
+  </div>
+);
+const Pict = ({ pi }) => (
+  <div className="pic-names">
+    {pi.map((pp) => (
+      <div className="sli-pic">
+        <img src={pp.img} alt="" />
+        <div className="lk-cht">
+          <i className={pp.icon}>{pp.n1}</i>
+          <i className={pp.icon1}>{pp.n2}</i>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+class Grid1 extends React.Component {
+  render() {
+    return (
       <div className="g-1">
         <Titl
           sc={[
@@ -82,6 +121,38 @@ const Prof = () => (
           ]}
         />
       </div>
+    );
+  }
+}
+class Grid3 extends React.Component {
+  render() {
+    return (
+      <div className="g-3">
+        <div className="tech">
+          <ul>
+            <li>about us</li>
+            <li>support</li>
+            <li>press</li>
+            <li>api</li>
+            <li>jobs</li>
+            <li>privacy</li>
+            <li>terms</li>
+            <li>directory</li>
+            <li>profile</li>
+            <li>hashtag</li>
+            <li> language</li>
+          </ul>
+        </div>
+        <div className="indus">
+          <h2>© 2019 INSTAGRAM</h2>
+        </div>
+      </div>
+    );
+  }
+}
+class Grid2 extends React.Component {
+  render() {
+    return (
       <div className="g-2">
         <Pict
           pi={[
@@ -235,34 +306,7 @@ const Prof = () => (
           ]}
         />
       </div>
-    </div>
-  </div>
-);
-
-const Titl = ({ sc }) => (
-  <div className="grd-names">
-    {sc.map((crd) => (
-      <div className="sli-crd2">
-        <h3>
-          <i className={crd.i} />
-          {crd.h3}
-        </h3>
-      </div>
-    ))}
-  </div>
-);
-const Pict = ({ pi }) => (
-  <div className="pic-names">
-    {pi.map((pp) => (
-      <div className="sli-pic">
-        <img src={pp.img} alt="" />
-        <div className="lk-cht">
-          <i className={pp.icon}>{pp.n1}</i>
-          <i className={pp.icon1}>{pp.n2}</i>
-        </div>
-      </div>
-    ))}
-  </div>
-);
-
+    );
+  }
+}
 export default Prof;

@@ -8,7 +8,7 @@
 
   .sides {
     // background-color: green;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(102, 102, 104);
     display: grid;
     grid-template-columns: 300px 1fr;
     height: 400px;
@@ -84,6 +84,7 @@
       // background: yellow;
       height: 50px;
       margin: 0 auto;
+
       h3 {
         float: left;
         margin: 10px 50px;
@@ -92,6 +93,7 @@
         color: gray;
         position: relative;
         left: 70px;
+        cursor: pointer;
         i {
           padding: 0 5px;
         }
@@ -106,14 +108,14 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;
-        column-gap: 40px;
+        grid-gap: 40px;
+        // column-gap: 40px;
         .sli-pic {
           overflow: hidden;
           position: relative;
           img {
             width: 100%;
-            height: 400px;
+            height: 380px;
           }
         }
         .lk-cht {
@@ -122,7 +124,7 @@
           top: 1px;
           width: 100%;
           // bottom: 400px;
-          height: 400px;
+          height: 380px;
           text-align: center;
           color: white;
 
@@ -147,5 +149,33 @@
         }
       }
     }
+  }
+}
+.g-3 {
+  height: 100px;
+  // background: purple;
+  margin: 0 -50px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  .tech {
+    align-self: center;
+
+    ul {
+      li {
+        list-style: none;
+        float: left;
+        margin: 0 10px;
+        text-transform: uppercase;
+        color: #013569;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  .indus {
+    color: #999999;
+    align-self: center;
+    justify-self: end;
+    font-size: 12px;
   }
 }

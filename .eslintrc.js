@@ -22,6 +22,7 @@ module.exports = {
     "import/no-named-as-default": 0,
     "react/prop-types": 0,
     "react/jsx-indent": 0,
-    indent: 0
+    indent: 0,
+    "max-classes-per-file": 0
   }
 };
