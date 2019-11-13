@@ -8,8 +8,9 @@ import Toss from './Toss';
 import Comment from './Comment';
 import Instagram from './Instagram/Instagram';
 import Profile from './Instagram/Profile';
+import Compass from './Instagram/Compass';
 
-const menu = ['home', 'toss', 'comment', 'Instagram', 'profile'];
+const menu = ['home', 'toss', 'comment', 'Instagram', 'profile', 'compass'];
 const Navigation = ({ menus }) => (
   <div className="navigation">
     <ul>
@@ -40,6 +41,7 @@ class App extends React.Component {
             <Route exact path="/comment" component={Comment} />
             <Route exact path="/instagram" component={Instagram} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/compass" component={Compass} />
           </Switch>
         </BrowserRouter>
       </div>

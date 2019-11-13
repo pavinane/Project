@@ -22,48 +22,52 @@ import img18 from './ImagesInsta/ins18.jpg';
 import img19 from './ImagesInsta/ins19.jpg';
 import img20 from './ImagesInsta/ins20.jpg';
 import img21 from './ImagesInsta/ins21.jpg';
+import Navi from './Navi';
 
 class Prof extends React.Component {
   render() {
     return (
-      <div className="prof">
-        <div className="sides">
-          <div className="prf-right">
-            <img src={img} alt="" />
-          </div>
-          <div className="prf-left">
-            <div className="id-name">
-              <div className="name-1">
-                <h1>nanepavi97</h1>
+      <div className="nav-1">
+        <Navi />
+        <div className="prof">
+          <div className="sides">
+            <div className="prf-right">
+              <img src={img} alt="" />
+            </div>
+            <div className="prf-left">
+              <div className="id-name">
+                <div className="name-1">
+                  <h1>nanepavi97</h1>
+                </div>
+                <div className="e-p">
+                  <button type="button">edit profile</button>
+                </div>
+                <i className="fas fa-cog" />
               </div>
-              <div className="e-p">
-                <button type="button">edit profile</button>
+              <div className="pff">
+                <div className="post">21 post</div>
+                <div className="followers">89 followers</div>
+                <div className="following">363 following</div>
               </div>
-              <i className="fas fa-cog" />
-            </div>
-            <div className="pff">
-              <div className="post">21 post</div>
-              <div className="followers">89 followers</div>
-              <div className="following">363 following</div>
-            </div>
-            <div className="slogan">
-              <h1>Páví Ñañ Ê 18/4/97</h1>
-              <p>
-                alwayz classy ,nevr trashy,N a little bit sassy
-                <br />
-                🎂Candle on April 18🍾
-                <br />
-                ⛓Mechanical Engineer 🔩
-                <br />
-                Thalapathy rasigan
-              </p>
+              <div className="slogan">
+                <h1>Páví Ñañ Ê 18/4/97</h1>
+                <p>
+                  alwayz classy ,nevr trashy,N a little bit sassy
+                  <br />
+                  🎂Candle on April 18🍾
+                  <br />
+                  ⛓Mechanical Engineer 🔩
+                  <br />
+                  Thalapathy rasigan
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="grids">
-          <Grid1 />
-          <Grid2 />
-          <Grid3 />
+          <div className="grids">
+            <Grid1 />
+            <Grid2 />
+            <Grid3 />
+          </div>
         </div>
       </div>
     );
@@ -98,29 +102,27 @@ const Pict = ({ pi }) => (
 class Grid1 extends React.Component {
   render() {
     return (
-      <div className="g-1">
-        <Titl
-          sc={[
-            {
-              h3: 'post',
-              i: 'fas fa-th',
-            },
-            {
-              h3: 'igtv',
-              i: 'fas fa-tv',
-            },
-            {
-              h3: 'saved',
-              i: 'far fa-bookmark',
-            },
+      <Titl
+        sc={[
+          {
+            h3: 'post',
+            i: 'fas fa-th',
+          },
+          {
+            h3: 'igtv',
+            i: 'fas fa-tv',
+          },
+          {
+            h3: 'saved',
+            i: 'far fa-bookmark',
+          },
 
-            {
-              h3: 'tagged',
-              i: 'far fa-user-circle',
-            },
-          ]}
-        />
-      </div>
+          {
+            h3: 'tagged',
+            i: 'far fa-user-circle',
+          },
+        ]}
+      />
     );
   }
 }

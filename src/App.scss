@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
@@ -7,8 +7,12 @@
   .navigation {
     font-size: 15px;
     text-transform: capitalize;
+    height: 38px;
+    background: rgb(184, 177, 177);
 
     ul {
+      margin: 0;
+      padding: 0;
       a {
         float: left;
         text-decoration: none;

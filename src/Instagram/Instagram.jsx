@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './Post';
+import Navi from './Navi';
 import './instagram.scss';
 import Leftcard from './Leftcard';
 import prfimg from './ImagesInsta/vijay.jpg';
@@ -10,29 +11,7 @@ class Title extends React.Component {
     return (
       <div className="heading">
         <div className="navi">
-          <div className="navi-card">
-            <div className="insta-icons">
-              <h1>
-                <i className="fab fa-instagram" />
-                <i className="fa fa-minus" />
-                𝕴𝖓𝖘𝖙𝖆𝖌𝖗𝖆𝖒
-              </h1>
-            </div>
-            <div className="search">
-              <input type="text" placeholder="search" />
-            </div>
-            <div className="creaters">
-              <div className="direction">
-                <i className="fa fa-compass" />
-              </div>
-              <div className="heart">
-                <i className="fa fa-heart" />
-              </div>
-              <div className="profile">
-                <i className="fa fa-user" />
-              </div>
-            </div>
-          </div>
+          <Navi />
         </div>
         <Contain />
       </div>
