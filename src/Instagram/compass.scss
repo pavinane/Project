@@ -4,7 +4,7 @@
 
   .dec-pep {
     width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto;
     height: 400px;
     .dp-card {
       display: grid;
@@ -12,8 +12,9 @@
 
       height: 50px;
       align-items: end;
-      font-size: 20px;
+      font-size: 15px;
       text-transform: capitalize;
+      font-family: " Roboto", sans-serif;
       .dsc-ppl {
         color: #989ba5;
       }
@@ -41,25 +42,28 @@
           //   background: coral;
           height: 250px;
           border: 1px solid #989ba5;
-
           border-radius: 4px;
           text-align: center;
           line-height: 30px;
           img {
             border-radius: 50%;
-            width: 80px;
+            width: 70px;
             align-self: center;
             margin: 15px 72px;
           }
           h2 {
-            font-size: 20px;
+            font-size: 18px;
+            font-family: "Source Sans Pro", sans-serif;
           }
           p {
             width: 200px;
             text-align: inherit;
             margin: 0 auto;
-            line-height: 20px;
+            line-height: 18px;
             color: #989ba5;
+            height: 37px;
+            font-family: " Roboto", sans-serif;
+            font-size: 14px;
           }
           button {
             background: #3897f0;
@@ -68,10 +72,11 @@
             height: 35px;
             position: relative;
             top: 10px;
-            border: 1px solid #989ba5;
-            font-size: 19px;
+            border: none;
+            font-family: " Roboto", sans-serif;
+            font-size: 17px;
             text-transform: capitalize;
-            font-weight: bold;
+            font-weight: 800;
             border-radius: 5px;
           }
         }
@@ -82,11 +87,12 @@
 .explore {
   width: 1200px;
   margin: 0 auto;
-  height: 2900px;
+  height: 2750px;
   h4 {
     text-transform: capitalize;
-    font-size: 23px;
+    font-size: 17px;
     color: #989ba5;
+    font-family: " Roboto", sans-serif;
   }
   .dp-gr {
     // height: 100px;
@@ -95,11 +101,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    column-gap: 35px;
+    grid-gap: 35px;
+    // column-gap: 35px;
     .dp-pic {
       overflow: hidden;
       position: relative;
+      height: 350px;
       img {
         width: 100%;
         height: 380px;
@@ -119,7 +126,7 @@
       i {
         margin: 0 10px;
         position: relative;
-        top: 200px;
+        top: 170px;
         display: none;
       }
       i::before {
@@ -134,34 +141,5 @@
         display: inline;
       }
     }
-  }
-}
-.dp-e {
-  width: 1400px;
-  height: 100px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin: 0 auto;
-  .tech-e {
-    align-self: center;
-
-    ul {
-      li {
-        list-style: none;
-        float: left;
-        margin: 0 10px;
-        text-transform: uppercase;
-        color: #013569;
-        font-weight: bold;
-        cursor: pointer;
-      }
-    }
-  }
-  .indus-e {
-    // margin: 0 10px;
-    color: #999999;
-    align-self: center;
-    justify-self: end;
-    font-size: 12px;
   }
 }

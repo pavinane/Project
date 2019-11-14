@@ -22,6 +22,7 @@
       .U-name {
         align-self: center;
         font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
         span {
           font-size: 17px;
           color: gray;
@@ -29,27 +30,31 @@
       }
     }
     .stories {
-      border: 1px solid gray;
+      border: 1px solid lightgray;
       height: 291px;
+      border-radius: 5px;
+
       .tit {
         display: grid;
         grid-template-columns: 2fr 1fr;
         padding: 10px 10px;
-        font-size: 18px;
-
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
         h4 {
           text-transform: capitalize;
           color: #9a9a9a;
         }
         h3 {
           text-transform: capitalize;
-          font-size: 18px;
+          font-size: 14px;
         }
       }
       .u-story {
         height: 250px;
-
         overflow: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
         .Stories {
           display: grid;
           grid-template-columns: 1fr 4fr;
@@ -75,26 +80,28 @@
       }
     }
     .suggest {
-      border: 1px solid gray;
-      height: 210px;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
       .sug-1 {
         display: grid;
         grid-template-columns: 3fr 1fr;
         padding: 10px 10px;
-        font-size: 18px;
+        font-size: 15px;
         text-transform: capitalize;
         h4 {
           color: #9a9a9a;
         }
         h3 {
-          font-size: 18px;
+          font-size: 15px;
         }
       }
       .sug-2 {
         .Stories {
           display: grid;
           grid-template-columns: 1fr 3fr 1fr;
-          padding: 1px 10px;
+          padding: 10px 10px;
           align-items: center;
 
           .stry {
@@ -104,12 +111,12 @@
           }
           .stry-name {
             h2 {
-              font-size: 17px;
+              font-size: 15px;
               text-transform: capitalize;
             }
             small {
               text-transform: capitalize;
-              font-size: 15px;
+              font-size: 13px;
               color: #b4a7a7;
             }
           }
@@ -122,8 +129,11 @@
       }
     }
     .pavi {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
       ul {
-        margin: -10px 10px;
+        position: relative;
+        right: 30px;
         li {
           list-style-type: disc;
           font-size: 13px;

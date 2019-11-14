@@ -1,8 +1,33 @@
 import React from 'react';
 import Navi from './Navi';
 import './compass.scss';
-import prfimg from './ImagesInsta/vijay.jpg';
-import img1 from './ImagesInsta/ins1.jpg';
+import pic1 from './ImagesInsta/ex1.jpg';
+import pic2 from './ImagesInsta/ex2.jpg';
+import pic3 from './ImagesInsta/ex3.jpg';
+import pic4 from './ImagesInsta/ex4.jpg';
+import pic5 from './ImagesInsta/ex5.jpg';
+import pic6 from './ImagesInsta/ex6.jpg';
+import pic7 from './ImagesInsta/ex7.jpg';
+import pic8 from './ImagesInsta/ex8.jpg';
+import pic9 from './ImagesInsta/ex9.jpg';
+import pic10 from './ImagesInsta/ex10.jpg';
+import pic11 from './ImagesInsta/ex11.jpg';
+import pic12 from './ImagesInsta/ex12.jpg';
+import pic13 from './ImagesInsta/ex13.jpg';
+import pic14 from './ImagesInsta/ex14.jpg';
+import pic15 from './ImagesInsta/ex15.jpg';
+import pic16 from './ImagesInsta/ex16.jpg';
+import pic17 from './ImagesInsta/ex17.jpg';
+import pic18 from './ImagesInsta/ex18.jpg';
+import pic19 from './ImagesInsta/ex19.jpg';
+import pic20 from './ImagesInsta/ex20.jpg';
+import pic21 from './ImagesInsta/ex21.jpg';
+import dp1 from './ImagesInsta/dp1.jpg';
+import dp2 from './ImagesInsta/dp2.jpg';
+import dp3 from './ImagesInsta/dp3.jpg';
+import dp4 from './ImagesInsta/dp4.jpg';
+import dp5 from './ImagesInsta/dp5.jpg';
+import Footer from './Footer';
 
 class compass extends React.Component {
   render() {
@@ -24,33 +49,33 @@ class compass extends React.Component {
             <GDP
               dp={[
                 {
-                  img: prfimg,
-                  n: 'pavi',
-                  p: 'Followed by misnaming_luv_98 +…',
+                  img: dp1,
+                  n: 'r_c_.edits',
+                  p: 'Followed by bis_memes + 1 more',
                   f: 'follow',
                 },
                 {
-                  img: img1,
-                  n: 'pavi',
-                  p: 'Followed by',
+                  img: dp2,
+                  n: 'anu21073',
+                  p: 'New to Instagram',
                   f: 'follow',
                 },
                 {
-                  img: prfimg,
-                  n: 'pavi',
-                  p: 'Followed by misnaming',
+                  img: dp3,
+                  n: 'virat1377',
+                  p: 'Followed by prabha.smarty + 13…',
                   f: 'follow',
                 },
                 {
-                  img: prfimg,
-                  n: 'pavi',
-                  p: 'new to instagram ',
+                  img: dp4,
+                  n: 'saran_maestro',
+                  p: 'Follows you',
                   f: 'follow',
                 },
                 {
-                  img: prfimg,
-                  n: 'pavi',
-                  p: 'Follow',
+                  img: dp5,
+                  n: 'devilseid',
+                  p: 'New to Instagram',
                   f: 'follow',
                 },
               ]}
@@ -58,7 +83,7 @@ class compass extends React.Component {
           </div>
         </div>
         <Dpic />
-        <DpGrid />
+        <Footer />
       </div>
     );
   }
@@ -68,7 +93,7 @@ const GDP = ({ dp }) => (
     {dp.map((dpg) => (
       <div className="dp-cd">
         <img src={dpg.img} alt="" />
-        <h4>{dpg.n}</h4>
+        <h2>{dpg.n}</h2>
         <p>{dpg.p}</p>
         <button type="button">{dpg.f}</button>
       </div>
@@ -84,147 +109,147 @@ class Dpic extends React.Component {
         <Pict
           pi={[
             {
-              img: img1,
+              img: pic1,
               icon: 'fa fa-heart',
               n1: '21',
               icon1: 'fa fa-comment',
               n2: '15',
             },
             {
-              img: img1,
+              img: pic2,
               icon: 'fa fa-heart',
               n1: '28',
               icon1: 'fa fa-comment',
               n2: '0',
             },
             {
-              img: prfimg,
+              img: pic3,
               icon: 'fa fa-heart',
               n1: '21',
               icon1: 'fa fa-comment',
               n2: '15',
             },
             {
-              img: prfimg,
+              img: pic4,
               icon: 'fa fa-heart',
               n1: '38',
               icon1: 'fa fa-comment',
               n2: '0',
             },
             {
-              img: prfimg,
+              img: pic5,
               icon: 'fa fa-heart',
               n1: '45',
               icon1: 'fa fa-comment',
               n2: '12',
             },
             {
-              img: prfimg,
+              img: pic6,
               icon: 'fa fa-heart',
               n1: '52',
               icon1: 'fa fa-comment',
               n2: '1',
             },
             {
-              img: prfimg,
+              img: pic7,
               icon: 'fa fa-heart',
               n1: '25',
               icon1: 'fa fa-comment',
               n2: '5',
             },
             {
-              img: prfimg,
+              img: pic8,
               icon: 'fa fa-heart',
               n1: '40',
               icon1: 'fa fa-comment',
               n2: '10',
             },
             {
-              img: prfimg,
+              img: pic9,
               icon: 'fa fa-heart',
               n1: '31',
               icon1: 'fa fa-comment',
               n2: '0',
             },
             {
-              img: prfimg,
+              img: pic10,
               icon: 'fa fa-heart',
               n1: '48',
               icon1: 'fa fa-comment',
               n2: '7',
             },
             {
-              img: prfimg,
+              img: pic11,
               icon: 'fa fa-heart',
               n1: '28',
               icon1: 'fa fa-comment',
               n2: '5',
             },
             {
-              img: prfimg,
+              img: pic12,
               icon: 'fa fa-heart',
               n1: '71',
               icon1: 'fa fa-comment',
               n2: '18',
             },
             {
-              img: prfimg,
+              img: pic13,
               icon: 'fa fa-heart',
               n1: '18',
               icon1: 'fa fa-comment',
               n2: '4',
             },
             {
-              img: prfimg,
+              img: pic14,
               icon: 'fa fa-heart',
               n1: '30',
               icon1: 'fa fa-comment',
               n2: '18',
             },
             {
-              img: prfimg,
+              img: pic15,
               icon: 'fa fa-heart',
               n1: '20',
               icon1: 'fa fa-comment',
               n2: '2',
             },
             {
-              img: prfimg,
+              img: pic16,
               icon: 'fa fa-heart',
               n1: '40',
               icon1: 'fa fa-comment',
               n2: '15',
             },
             {
-              img: prfimg,
+              img: pic17,
               icon: 'fa fa-heart',
               n1: '55',
               icon1: 'fa fa-comment',
               n2: '8',
             },
             {
-              img: prfimg,
+              img: pic18,
               icon: 'fa fa-heart',
               n1: '30',
               icon1: 'fa fa-comment',
               n2: '10',
             },
             {
-              img: prfimg,
+              img: pic19,
               icon: 'fa fa-heart',
               n1: '27',
               icon1: 'fa fa-comment',
               n2: '10',
             },
             {
-              img: prfimg,
+              img: pic20,
               icon: 'fa fa-heart',
               n1: '21',
               icon1: 'fa fa-comment',
               n2: '15',
             },
             {
-              img: prfimg,
+              img: pic21,
               icon: 'fa fa-heart',
               n1: '21',
               icon1: 'fa fa-comment',
@@ -249,30 +274,5 @@ const Pict = ({ pi }) => (
     ))}
   </div>
 );
-class DpGrid extends React.Component {
-  render() {
-    return (
-      <div className="dp-e">
-        <div className="tech-e">
-          <ul>
-            <li>about us</li>
-            <li>support</li>
-            <li>press</li>
-            <li>api</li>
-            <li>jobs</li>
-            <li>privacy</li>
-            <li>terms</li>
-            <li>directory</li>
-            <li>profile</li>
-            <li>hashtag</li>
-            <li> language</li>
-          </ul>
-        </div>
-        <div className="indus-e">
-          <h2>© 2019 INSTAGRAM</h2>
-        </div>
-      </div>
-    );
-  }
-}
+
 export default compass;

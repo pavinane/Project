@@ -22,7 +22,15 @@ import img18 from './ImagesInsta/ins18.jpg';
 import img19 from './ImagesInsta/ins19.jpg';
 import img20 from './ImagesInsta/ins20.jpg';
 import img21 from './ImagesInsta/ins21.jpg';
+import pic1 from './ImagesInsta/sty1.jpeg';
+import pic2 from './ImagesInsta/sty2.jpg';
+import pic3 from './ImagesInsta/sty3.jpg';
+import pic4 from './ImagesInsta/sty4.jpg';
+import pic5 from './ImagesInsta/sty5.jpg';
+import pic6 from './ImagesInsta/sty6.jpg';
+import pic7 from './ImagesInsta/sty7.jpg';
 import Navi from './Navi';
+import Footer from './Footer';
 
 class Prof extends React.Component {
   render() {
@@ -45,9 +53,18 @@ class Prof extends React.Component {
                 <i className="fas fa-cog" />
               </div>
               <div className="pff">
-                <div className="post">21 post</div>
-                <div className="followers">89 followers</div>
-                <div className="following">363 following</div>
+                <div className="post">
+                  <b> 21 </b>
+                  post
+                </div>
+                <div className="followers">
+                  <b> 89 </b>
+                  followers
+                </div>
+                <div className="following">
+                  <b> 363 </b>
+                  following
+                </div>
               </div>
               <div className="slogan">
                 <h1>Páví Ñañ Ê 18/4/97</h1>
@@ -63,16 +80,62 @@ class Prof extends React.Component {
               </div>
             </div>
           </div>
+          <div className="sto">
+            <Stry
+              st={[
+                {
+                  pic: pic1,
+                  name: 'Travel',
+                },
+                {
+                  pic: pic2,
+                  name: 'new venu...',
+                },
+                {
+                  pic: pic3,
+                  name: 'memories✨',
+                },
+                {
+                  pic: pic4,
+                  name: 'universe✨',
+                },
+                {
+                  pic: pic5,
+                  name: 'peace✨',
+                },
+                {
+                  pic: pic6,
+                  name: 'joy✨',
+                },
+                {
+                  pic: pic7,
+                  name: 'appa✨',
+                },
+              ]}
+            />
+          </div>
           <div className="grids">
             <Grid1 />
             <Grid2 />
-            <Grid3 />
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
 }
+const Stry = ({ st }) => (
+  <div className="sty-grd">
+    {st.map((gd) => (
+      <div className="sty-crd">
+        <div className="sty-pic">
+          <img src={gd.pic} alt="" />
+        </div>
+        <h4>{gd.name}</h4>
+      </div>
+    ))}
+  </div>
+);
 
 const Titl = ({ sc }) => (
   <div className="grd-names">
@@ -126,32 +189,7 @@ class Grid1 extends React.Component {
     );
   }
 }
-class Grid3 extends React.Component {
-  render() {
-    return (
-      <div className="g-3">
-        <div className="tech">
-          <ul>
-            <li>about us</li>
-            <li>support</li>
-            <li>press</li>
-            <li>api</li>
-            <li>jobs</li>
-            <li>privacy</li>
-            <li>terms</li>
-            <li>directory</li>
-            <li>profile</li>
-            <li>hashtag</li>
-            <li> language</li>
-          </ul>
-        </div>
-        <div className="indus">
-          <h2>© 2019 INSTAGRAM</h2>
-        </div>
-      </div>
-    );
-  }
-}
+
 class Grid2 extends React.Component {
   render() {
     return (

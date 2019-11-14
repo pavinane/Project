@@ -1,6 +1,6 @@
 .n-c {
-  border-bottom: 2px solid lightgray;
-  height: 80px;
+  border-bottom: 0.5px solid lightgray;
+  height: 100px;
   .navi-card {
     height: 83px;
     margin: 0 auto;
@@ -12,14 +12,24 @@
     .insta-icons {
       word-spacing: 0px;
       justify-self: start;
-      h1 {
-        font-size: 35px;
-        i.fa.fa-minus {
-          transform: rotate(90deg);
-          font-size: 40px;
-        }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 180px;
+      grid-gap: 10px;
+      text-align: center;
+      svg {
+        align-self: center;
+      }
+      p {
+        font-size: 50px;
+        align-self: start;
+        font-weight: 10;
+      }
+      img {
+        align-self: center;
       }
     }
+
     .search {
       input {
         width: 250px;
