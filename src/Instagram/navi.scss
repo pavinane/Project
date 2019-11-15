@@ -19,6 +19,8 @@
       text-align: center;
       svg {
         align-self: center;
+        position: relative;
+        top: 5px;
       }
       p {
         font-size: 50px;
@@ -27,10 +29,18 @@
       }
       img {
         align-self: center;
+        position: relative;
+        top: 7px;
       }
     }
 
     .search {
+      i {
+        position: relative;
+        left: 98px;
+        font-size: 13px;
+        color: gray;
+      }
       input {
         width: 250px;
         height: 30px;
@@ -42,7 +52,7 @@
       input[type="text"] {
         text-align: center;
         text-transform: capitalize;
-        font-size: 18px;
+        font-size: 15px;
       }
     }
 

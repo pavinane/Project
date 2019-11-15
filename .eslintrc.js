@@ -23,6 +23,7 @@ module.exports = {
     "react/prop-types": 0,
     "react/jsx-indent": 0,
     indent: 0,
-    "max-classes-per-file": 0
+    "max-classes-per-file": 0,
+    "react/button-has-type": 0
   }
 };

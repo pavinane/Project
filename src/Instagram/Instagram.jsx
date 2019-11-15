@@ -30,7 +30,7 @@ class Contain extends React.Component {
               <img src={prfimg} alt="" />
             </div>
             <h2>nane pavi </h2>
-            <i className="fas fa-ellipsis-h" />
+            <span>...</span>
           </div>
           <div className="body">
             <Post />

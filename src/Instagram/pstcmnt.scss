@@ -16,7 +16,7 @@
   }
   .us-cmnt {
     display: grid;
-    grid-template-rows: 100px 450px 100px 100px;
+    grid-template-rows: 100px 450px 125px 80px;
     // width: 200px;
     // background: pink;
     border: 1px solid silver;
@@ -49,12 +49,19 @@
     }
     .sty-grd {
       border-bottom: 1px solid silver;
+      // height: 50px;
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+
       .follwers-cmnt {
         //   background: rgb(122, 116, 116);
         display: grid;
-        grid-template-columns: 70px 1fr 25px;
+        grid-template-columns: 60px 290px 25px;
         position: relative;
         top: 20px;
+        left: 10px;
+        padding: 10px 0;
+
         .user-pic {
           img {
             width: 50px;
@@ -65,7 +72,33 @@
           h4 {
             text-align: inherit;
             width: 300px;
+            font-size: 16px;
+            padding: 10px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            //
+            span {
+              font-weight: normal;
+              padding: 0 10px;
+            }
           }
+          p {
+            font-size: 20px;
+            color: gray;
+          }
+          .ho-l-r {
+            display: grid;
+            grid-template-columns: 45px 70px 45px;
+            align-items: end;
+            color: gray;
+            width: 200px;
+            h2 {
+              font-size: 15px;
+            }
+          }
+        }
+        .hrt {
+          color: gray;
+          padding: 10px 0;
         }
       }
     }
@@ -77,27 +110,50 @@
       border-bottom: 1px solid silver;
       padding: 0 20px;
       .cmt-ic {
+        span {
+          button {
+            .glyphsSpriteComment__outline__24__grey_9 u-__7 {
+              background-image: url(https://i.ibb.co/8Pvy5bf/icons2x.png);
+            }
+          }
+        }
         i {
           font-size: 30px;
           padding: 0 10px;
           letter-spacing: 1px;
         }
+
         i.far.fa-bookmark {
           position: relative;
           left: 200px;
         }
       }
       .lk-count {
-        font-family: " Roboto", sans-serif;
-        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+
         position: relative;
         top: 10px;
-        bo p {
+
+        .lk-cmn {
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+          align-items: center;
+          height: 50px;
+          img {
+            width: 30px;
+            border-radius: 50%;
+          }
+          p {
+            align-items: center;
+            color: black;
+            font-size: 16px;
+          }
+        }
+        p {
           color: gray;
-          position: relative;
-          top: 5px;
           font-size: 13px;
           text-transform: uppercase;
+          padding: 10px 0;
         }
       }
     }
@@ -116,7 +172,6 @@
       input[type="text"] {
         font-size: 20px;
         padding: 0 10px;
-        text-transform: capitalize;
       }
       h3 {
         color: #c7e1fb;

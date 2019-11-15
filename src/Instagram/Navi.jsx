@@ -22,6 +22,7 @@ class Navi extends React.Component {
             <img src={logo} alt="" />
           </div>
           <div className="search">
+            <i className="fa fa-search" />
             <input type="text" placeholder="search" />
           </div>
           <div className="creaters">
