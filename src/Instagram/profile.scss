@@ -98,27 +98,30 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         width: 1100px;
-        height: 150px;
+        justify-items: center;
         grid-gap: 20px;
-        align-self: center;
+
         .sty-crd {
           .sty-pic {
-            border: 1px solid rgb(133, 133, 136);
-            width: 100px;
+            border: 1px solid #858588;
+            width: 88px;
             border-radius: 50%;
-            height: 120px;
-            padding: 0 10px;
+            height: 85px;
             img {
               border-radius: 50%;
-              height: 100px;
-              padding: 10px 0px;
+              height: 81px;
+              padding: 2px 2px;
+              width: 84px;
             }
           }
           h4 {
-            margin: 20px 25px;
+            // margin: 20px 25px;
             text-transform: capitalize;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
+            text-align: center;
+            position: relative;
+            top: 20px;
           }
         }
       }

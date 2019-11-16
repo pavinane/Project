@@ -1,8 +1,7 @@
 import React from "react";
-
 import "./post.scss";
 
-class Post extends React.Component {
+class Posting extends React.Component {
   render() {
     return (
       <div className="posting">
@@ -115,7 +114,7 @@ class PostImage extends React.Component {
     return (
       <div className="post-image">
         <div className="post">
-          <Post />
+          <Posting />
         </div>
         <div className="sym">
           <div className="three">

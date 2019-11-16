@@ -11,8 +11,18 @@ import Profile from './Instagram/Profile';
 import Compass from './Instagram/Compass';
 import PostCmnt from './Instagram/PstCmnt';
 import Login from './Instagram/Login';
+import Edit from './Instagram/Edit';
+import IGtv from './Instagram/Igtv';
 
-const menu = ['login', 'Instagram', 'profile', 'compass', 'postcmnt'];
+const menu = [
+  'login',
+  'Instagram',
+  'profile',
+  'compass',
+  'postcmnt',
+  'edit',
+  'igtv',
+];
 const Navigation = ({ menus }) => (
   <div className="navigation">
     <ul>
@@ -46,6 +56,8 @@ class App extends React.Component {
             <Route exact path="/compass" component={Compass} />
             <Route exact path="/postcmnt" component={PostCmnt} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/edit" component={Edit} />
+            <Route exact path="/igtv" component={IGtv} />
           </Switch>
         </BrowserRouter>
       </div>

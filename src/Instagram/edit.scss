@@ -1,0 +1,163 @@
+.edit {
+  .edt-2 {
+    width: 1150px;
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+    margin-top: 70px;
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 10px;
+    .edt-prof {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      height: 600px;
+      row-gap: 20px;
+
+      .ep-cd {
+        background: #fff;
+
+        h2 {
+          font-family: " Roboto", sans-serif;
+          font-weight: normal;
+          font-size: 20px;
+          position: relative;
+          top: 17px;
+          left: 20px;
+          color: gray;
+        }
+      }
+      .ep-cd:hover {
+        border-left: 3px solid rgb(136, 131, 131);
+        background: #fafafa;
+
+        h2 {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+    .lf-co {
+      border-left: 1px solid rgb(223, 218, 218);
+
+      .ps {
+        position: relative;
+        top: 40px;
+        height: 800px;
+
+        .crd-1 {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          width: 800px;
+          margin: 0 auto;
+          grid-gap: 20px;
+          img {
+            width: 60px;
+            border-radius: 50%;
+            position: relative;
+            left: 170px;
+          }
+          h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+
+            span {
+              font-size: 17px;
+              color: blue;
+            }
+          }
+        }
+        .card-2 {
+          display: grid;
+          grid-template-columns: 230px 2fr;
+          width: 800px;
+          margin: 0 auto;
+          grid-gap: 20px;
+          height: 665px;
+          position: relative;
+          top: 20px;
+          .aa {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            height: 575px;
+            align-items: center;
+            h2 {
+              text-align: end;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+            }
+          }
+          .form-input {
+            form {
+              .input-form {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-gap: 20px;
+                width: 400px;
+                height: 615px;
+                input {
+                  height: 40px;
+                  border-radius: 5px;
+                  border: 1px solid gray;
+                }
+                input[placeholder] {
+                  font-size: 18px;
+                  padding: 0 10px;
+                  text-transform: capitalize;
+                }
+
+                h3 {
+                  align-self: center;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: gray;
+                }
+                p {
+                  font-size: 20px;
+                  padding: 5px 0;
+                  font-family: Arial, Helvetica, sans-serif;
+                }
+                .in1 {
+                  display: grid;
+                  grid-template-columns: 30px 250px;
+                  line-height: 20px;
+                  height: 35px;
+                  font-size: 16px;
+                  align-items: center;
+                  font-family: Arial, Helvetica, sans-serif;
+                  input {
+                    width: 20px;
+                  }
+                  span {
+                    color: blue;
+                  }
+                }
+                .but-in {
+                  display: grid;
+                  grid-template-columns: 1fr 2fr;
+                  position: relative;
+                  top: 30px;
+                  align-items: center;
+                  button {
+                    width: 80px;
+                    height: 40px;
+                    border-radius: 5px;
+                    color: white;
+                    background-color: #67adee;
+                    font-size: 17px;
+                    font-family: Arial, Helvetica, sans-serif;
+                  }
+                  h4 {
+                    color: #3897f0;
+                    font-family: Arial, Helvetica, sans-serif;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
