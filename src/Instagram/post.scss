@@ -58,12 +58,12 @@
     border-bottom: 1px solid #dbd6d6;
 
     font-family: sans-serif;
-    .text {
-      span {
+
+    .cc {
+      a {
+        text-decoration: none;
         color: gray;
-      }
-      small {
-        color: gray;
+        font-size: 22px;
       }
     }
     .tag-name {

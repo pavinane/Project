@@ -52,8 +52,10 @@ class Edit extends React.Component {
                   <h2>Name</h2>
                   <h2>Username</h2>
                   <h2>Website</h2>
-                  <h2>Bio</h2>-<h2>Email</h2>
-                  <h2>Phone Number</h2>
+                  <h2>Bio</h2>
+                  <h2>{}</h2>
+                  <h2>Email</h2>
+                  <h2>Number</h2>
                   <h2>Gender</h2>
                   <h2>Similar Account Suggestions</h2>
                 </div>

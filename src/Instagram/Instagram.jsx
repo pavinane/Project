@@ -38,17 +38,21 @@ class Contain extends React.Component {
 
 const Main = () => (
   <div className="right-card">
-    <div className="top">
-      <div className="profile">
-        {/* <i className="far fa-circle" /> */}
-        <img src={prfimg} alt="" />
-      </div>
-      <h2>nane pavi </h2>
-      <span>...</span>
-    </div>
+    <Imp />
     <div className="body">
       <Post />
     </div>
+  </div>
+);
+
+const Imp = () => (
+  <div className="top">
+    <div className="profile">
+      {/* <i className="far fa-circle" /> */}
+      <img src={prfimg} alt="" />
+    </div>
+    <h2>nane pavi </h2>
+    <span>...</span>
   </div>
 );
 export default Title;

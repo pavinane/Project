@@ -1,5 +1,6 @@
 import React from 'react';
 import './profile.scss';
+import { Switch, Route, Link } from 'react-router-dom';
 import img from './ImagesInsta/vijay.jpg';
 import img1 from './ImagesInsta/ins1.jpg';
 import img2 from './ImagesInsta/ins2.jpg';
@@ -31,6 +32,23 @@ import pic6 from './ImagesInsta/sty6.jpg';
 import pic7 from './ImagesInsta/sty7.jpg';
 import Navi from './Navi';
 import Footer from './Footer';
+import Igtv from './Igtv';
+
+const Saved = () => <p>saved</p>;
+
+const Tagged = () => <p>Tagged</p>;
+
+const Igtvi = () => (
+  <>
+    <Igtv />
+  </>
+);
+
+const Postins = () => (
+  <>
+    <Grid2 />
+  </>
+);
 
 class Prof extends React.Component {
   render() {
@@ -48,7 +66,9 @@ class Prof extends React.Component {
                   <h1>nanepavi97</h1>
                 </div>
                 <div className="e-p">
-                  <button type="button">edit profile</button>
+                  <Link to="/edit">
+                    <button type="button">edit profile</button>
+                  </Link>
                 </div>
                 <i className="fas fa-cog" />
               </div>
@@ -116,7 +136,14 @@ class Prof extends React.Component {
           </div>
           <div className="grids">
             <Grid1 />
-            <Grid2 />
+            <Switch>
+              Profile 
+{' '}
+<Route exact path="/profile" component={Postins} />
+              <Route exact path="/profile/igtv" component={Igtvi} />
+              <Route exact path="/profile/saved" component={Saved} />
+              <Route exact path="/profile/tagged" component={Tagged} />
+            </Switch>
           </div>
         </div>
         <Footer />
@@ -124,6 +151,7 @@ class Prof extends React.Component {
     );
   }
 }
+
 const Stry = ({ st }) => (
   <div className="sty-grd">
     {st.map((gd) => (
@@ -140,12 +168,14 @@ const Stry = ({ st }) => (
 const Titl = ({ sc }) => (
   <div className="grd-names">
     {sc.map((crd) => (
-      <div className="sli-crd2">
-        <h3>
-          <i className={crd.i} />
-          {crd.h3}
-        </h3>
-      </div>
+      <Link to={crd.link}>
+        <div className="sli-crd2">
+          <h3>
+            <i className={crd.icon} />
+            {crd.heading}
+          </h3>
+        </div>
+      </Link>
     ))}
   </div>
 );
@@ -168,21 +198,26 @@ class Grid1 extends React.Component {
       <Titl
         sc={[
           {
-            h3: 'post',
-            i: 'fas fa-th',
-          },
-          {
-            h3: 'igtv',
-            i: 'fas fa-tv',
-          },
-          {
-            h3: 'saved',
-            i: 'far fa-bookmark',
+            link: '/profile',
+            heading: 'post',
+            icon: 'fas fa-th',
           },
 
           {
-            h3: 'tagged',
-            i: 'far fa-user-circle',
+            link: '/profile/igtv',
+            heading: 'igtv',
+            icon: 'fas fa-tv',
+          },
+          {
+            link: '/profile/saved',
+            heading: 'saved',
+            icon: 'far fa-bookmark',
+          },
+
+          {
+            link: '/profile/tagged',
+            heading: 'tagged',
+            icon: 'far fa-user-circle',
           },
         ]}
       />
@@ -193,7 +228,7 @@ class Grid1 extends React.Component {
 class Grid2 extends React.Component {
   render() {
     return (
-      <div className="g-2">
+      <div className="gi-2">
         <Pict
           pi={[
             {

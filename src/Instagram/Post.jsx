@@ -1,6 +1,6 @@
 import React from "react";
 import "./post.scss";
-
+import { Link } from "react-router-dom";
 class Posting extends React.Component {
   render() {
     return (
@@ -130,41 +130,41 @@ class PostImage extends React.Component {
           <div classNames="num-lk">
             <b>4,740 likes</b>
           </div>
-          <div className="text">
+
+          <Srt
+            sym={[
+              {
+                bld: "mokkapost",
+                itly: "Aga aga aga ",
+                em: "😂😂"
+              }
+            ]}
+          />
+          <div className="cc">
+            <Link to="/Postcmnt">
+              <small>View all 21 comments</small>
+            </Link>
+          </div>
+          <div className="tag-name">
             <Srt
               sym={[
                 {
-                  bld: "mokkapost",
-                  itly: "Aga aga aga ",
-                  em: "😂😂"
+                  bld: "pavinane",
+                  itly: "@nane",
+                  em: "😍😍😍"
                 }
               ]}
             />
-            <small>View all 21 comments</small>
-          </div>
-          <div className="tag-name">
-            <div className="1">
-              <Srt
-                sym={[
-                  {
-                    bld: "pavinane",
-                    itly: "@nane",
-                    em: "😍😍😍"
-                  }
-                ]}
-              />
-            </div>
-            <div className="2">
-              <Srt
-                sym={[
-                  {
-                    bld: "ironman",
-                    em:
-                      "❤️ Watkin kdsaccoccie I've seen that waterfall it's reallycool"
-                  }
-                ]}
-              />
-            </div>
+
+            <Srt
+              sym={[
+                {
+                  bld: "ironman",
+                  em:
+                    "❤️ Watkin kdsaccoccie I've seen that waterfall it's reallycool"
+                }
+              ]}
+            />
           </div>
         </div>
         <div className="comnt-section">

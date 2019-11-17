@@ -14,26 +14,26 @@ import Login from './Instagram/Login';
 import Edit from './Instagram/Edit';
 import IGtv from './Instagram/Igtv';
 
-const menu = [
-  'login',
-  'Instagram',
-  'profile',
-  'compass',
-  'postcmnt',
-  'edit',
-  'igtv',
-];
-const Navigation = ({ menus }) => (
-  <div className="navigation">
-    <ul>
-      {menus.map((m) => (
-        <Link key={m} to={m === 'home' ? '/' : `/${m}`}>
-          <li>{m}</li>
-        </Link>
-      ))}
-    </ul>
-  </div>
-);
+// const menu = [
+//   'login',
+//   // 'Instagram',
+//   // 'profile',
+//   // 'compass',
+//   // 'postcmnt',
+//   // 'edit',
+//   'igtv',
+// ];
+// const Navigation = ({ menus }) => (
+//   <div className="navigation">
+//     <ul>
+//       {menus.map((m) => (
+//         <Link key={m} to={m === 'home' ? '/' : `/${m}`}>
+//           <li>{m}</li>
+//         </Link>
+//       ))}
+//     </ul>
+//   </div>
+// );
 // const Home = () => (
 //   <div className="h1">
 //     <h1>This is Home</h1>
@@ -44,15 +44,18 @@ class App extends React.Component {
     return (
       <div className="app">
         <BrowserRouter>
-          <Navigation menus={menu} />
+          {/* <Navigation menus={menu} /> */}
           <Switch>
             {/* <Route exact path="/" component={Home} />
             <Route exact path="/toss" component={Toss} />
             <Route exact path="/tail" component={Tail} />
             <Route exact path="/head" component={Head} />
             <Route exact path="/comment" component={Comment} /> */}
-            <Route exact path="/instagram" component={Instagram} />
+            <Route exact path="/" component={Instagram} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/profile/igtv" component={Profile} />
+            <Route exact path="/profile/saved" component={Profile} />
+            <Route exact path="/profile/tagged" component={Profile} />
             <Route exact path="/compass" component={Compass} />
             <Route exact path="/postcmnt" component={PostCmnt} />
             <Route exact path="/login" component={Login} />
