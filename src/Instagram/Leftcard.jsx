@@ -1,5 +1,6 @@
 import React from 'react';
 import './left.scss';
+import { Link } from 'react-router-dom';
 import prfimg from './ImagesInsta/vijay.jpg';
 
 const Gimages = ({
@@ -23,7 +24,9 @@ class Leftcards extends React.Component {
         <div className="cards">
           <div className="Dp">
             <div className="pic">
-              <img src={prfimg} alt="" />
+              <Link to="/profile">
+                <img src={prfimg} alt="" />
+              </Link>
             </div>
             <div className="U-name">
               <h2>nanepavi97</h2>

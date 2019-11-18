@@ -141,7 +141,7 @@ class PostImage extends React.Component {
             ]}
           />
           <div className="cc">
-            <Link to="/Postcmnt">
+            <Link to="/detailpost">
               <small>View all 21 comments</small>
             </Link>
           </div>

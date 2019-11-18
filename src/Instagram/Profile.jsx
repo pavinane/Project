@@ -34,9 +34,17 @@ import Navi from './Navi';
 import Footer from './Footer';
 import Igtv from './Igtv';
 
-const Saved = () => <p>saved</p>;
+const Saved = () => (
+  <>
+    <Grid2 />
+  </>
+);
 
-const Tagged = () => <p>Tagged</p>;
+const Tagged = () => (
+  <>
+    <Igtv />
+  </>
+);
 
 const Igtvi = () => (
   <>
@@ -137,9 +145,7 @@ class Prof extends React.Component {
           <div className="grids">
             <Grid1 />
             <Switch>
-              Profile 
-{' '}
-<Route exact path="/profile" component={Postins} />
+              <Route exact path="/profile" component={Postins} />
               <Route exact path="/profile/igtv" component={Igtvi} />
               <Route exact path="/profile/saved" component={Saved} />
               <Route exact path="/profile/tagged" component={Tagged} />

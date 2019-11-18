@@ -30,7 +30,7 @@ class Navi extends React.Component {
           </div>
           <div className="creaters">
             <div className="direction">
-              <Link to="/compass">
+              <Link to="/discover">
                 <svg
                   aria-label="Find People"
                   className="_8-yf5 "

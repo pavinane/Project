@@ -12,7 +12,7 @@
 
       height: 50px;
       align-items: end;
-      font-size: 15px;
+      font-size: 18px;
       text-transform: capitalize;
       font-family: " Roboto", sans-serif;
       .dsc-ppl {
@@ -20,7 +20,10 @@
       }
       .S-A {
         justify-self: end;
-        color: #3897f0;
+        a {
+          text-decoration: none;
+          color: #3897f0;
+        }
       }
     }
     .dp-grid {

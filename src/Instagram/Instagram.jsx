@@ -4,7 +4,7 @@ import Navi from './Navi';
 import './instagram.scss';
 import Leftcard from './Leftcard';
 import prfimg from './ImagesInsta/vijay.jpg';
-// import { Route } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 class Title extends React.Component {
   render() {
@@ -49,7 +49,9 @@ const Imp = () => (
   <div className="top">
     <div className="profile">
       {/* <i className="far fa-circle" /> */}
-      <img src={prfimg} alt="" />
+      <Link to="/profile">
+        <img src={prfimg} alt="" />
+      </Link>
     </div>
     <h2>nane pavi </h2>
     <span>...</span>

@@ -28,6 +28,7 @@ import dp3 from './ImagesInsta/dp3.jpg';
 import dp4 from './ImagesInsta/dp4.jpg';
 import dp5 from './ImagesInsta/dp5.jpg';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 class compass extends React.Component {
   render() {
@@ -42,7 +43,9 @@ class compass extends React.Component {
               <h4>discover people</h4>
             </div>
             <div className="S-A">
-              <h4>see all</h4>
+              <Link to="/Seeall">
+                <h4>see all</h4>
+              </Link>
             </div>
           </div>
           <div className="dp-grid">
